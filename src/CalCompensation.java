@@ -12,7 +12,11 @@ public class CalCompensation {
 		else {
 			commission = sales * 0.01;
 		}
-		compensation = commission + salary;
+		if(salary + commission < 18000) {
+			compensation = 18000;
+		}else {
+			compensation = commission + salary;
+		}
 		return compensation;
 	}
 }
