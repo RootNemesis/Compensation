@@ -3,10 +3,10 @@ public class CalCompensation {
 	public double calculateCompensation(double sales,double salary) {
 		double commission;
 		double compensation;
-		if(sales > 50000) {
+		if(sales > 100000) {
 			commission = sales * 0.03;
 		}
-		else if(sales > 25000) {
+		else if(sales > 50000) {
 			commission = sales * 0.02;
 		}
 		else {
